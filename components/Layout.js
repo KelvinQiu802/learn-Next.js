@@ -37,6 +37,9 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <Link nk href='/posts/first-post'>
+              <a className={utilStyles.headingMd}>cd First_Posts</a>
+            </Link>
           </>
         ) : (
           <>
