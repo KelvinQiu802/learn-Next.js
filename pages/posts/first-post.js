@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import Head from 'next/head';
 import Script from 'next/script';
+import Layout from '../../components/Layout';
 
 const FirstPost = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -14,10 +14,7 @@ const FirstPost = () => {
         onLoad={() => console.log('Facebook Script Loaded')}
       />
       <h1>First Post</h1>
-      <h2>
-        <Link href='/'>cd ..</Link>
-      </h2>
-    </>
+    </Layout>
   );
 };
 
